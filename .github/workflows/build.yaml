@@ -1,14 +1,14 @@
-name: Build
+name: SonarQube
 
 on:
   push:
     branches:
       - main
-
+  workflow_dispatch:
 
 jobs:
   build:
-    name: Build
+    name: Sonartesting
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
